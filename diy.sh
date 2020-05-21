@@ -17,6 +17,10 @@ git clone https://github.com/openwrt-develop/luci-theme-atmaterial package/luci-
 git clone https://github.com/apollo-ng/luci-theme-darkmatter.git package/luci-theme-darkmatter
 git clone https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 
+# Uncomment a feed source
+sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+
+
 #更新feeds
 ./scripts/feeds update -a
 ./scripts/feeds install -a
