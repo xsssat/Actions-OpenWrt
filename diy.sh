@@ -16,3 +16,7 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 git clone https://github.com/openwrt-develop/luci-theme-atmaterial package/luci-theme-atmaterial
 git clone https://github.com/apollo-ng/luci-theme-darkmatter.git package/luci-theme-darkmatter
 git clone https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+
+#更新feeds
+./scripts/feeds update -a
+./scripts/feeds install -a
