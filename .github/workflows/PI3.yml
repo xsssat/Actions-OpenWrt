@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build OpenWrt
+name: 云编译树莓派3 v1.0
 
 on: 
   release:
